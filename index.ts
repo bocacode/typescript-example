@@ -68,16 +68,16 @@ complexItem = 22
 
 // console.log("complexItem",complexItem)
 enum bloodType {
-    aPositive,
-    bPositive,
-    oNegative,
-    oPositive,
+    aPositive =20,
+    bPositive =30,
+    oNegative =40,
+    oPositive =80,
 }
 interface human {
     name: string,
-    age: number,
     height: number,
     bloodType?: bloodType
+    age: number,
 }
 
 
@@ -88,4 +88,5 @@ const me : human = {
     height: 6 * 12
 
 }
+console.log({me})
 
