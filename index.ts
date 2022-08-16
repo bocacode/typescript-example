@@ -56,4 +56,36 @@ function sum(arr: number[]): number {
 
 let numbers: number[] = [1,2,3,4,5,6]
 
-console.log(sum(numbers))
+// console.log(sum(numbers))
+
+let complexItem: any = { name: "damian"}
+
+complexItem =  { name: "damian", hasDog: true}
+
+complexItem = { title: "professor"}
+complexItem = "it's a string"
+complexItem = 22
+
+// console.log("complexItem",complexItem)
+enum bloodType {
+    aPositive,
+    bPositive,
+    oNegative,
+    oPositive,
+}
+interface human {
+    name: string,
+    age: number,
+    height: number,
+    bloodType?: bloodType
+}
+
+
+const me : human = {
+    name: "bobby",
+    age: 49,
+    // bloodType: bloodType.aPositive,
+    height: 6 * 12
+
+}
+
